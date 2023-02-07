@@ -108,6 +108,8 @@ export class Generator {
         }
 
         const operation: OpenAPIV3.OperationObject = {
+          description: httpEvent.description,
+          summary: httpEvent.summary,
           operationId: httpEvent.operationId,
           responses: responses,
           tags: httpEvent.tags,
